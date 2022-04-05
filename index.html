@@ -15,7 +15,7 @@
             <img src="./images/ictdd.png" alt="ict logo" />
           </div>
           <div class="second">
-            <img src="./images/ledp.apng" alt="ledp logo" />
+            <img src="./images/ledp.apng" id="ledp" alt="ledp logo" />
           </div>
           <div class="third">
             <img src="./images/mujib100.png" alt="mujib logo" />
@@ -51,137 +51,155 @@
         </nav>
       </div>
     </header>
-    <main class="main area">
-      <div class="main-header">
-        <h1>Student Registration Form</h1>
-        <hr />
-      </div>
-      <div class="main-para">
-        <p>Please enter relevent information</p>
-        <hr class="prar-hr" />
-        <p>Mandatory Field*</p>
-      </div>
-      <form action="" class="main-form">
-        <div class="left-side">
-          <label for="district">District</label>
-          <br />
-          <select name="district" id="district">
-            <option value="1" disabled selected>--Selecet One--</option>
-            <option value="2">district 1</option>
-            <option value="3">district 1</option>
-            <option value="4">district 1</option>
-          </select>
-          <br />
-          <label for="course">Course</label>
-          <br />
-          <select name="course" id="course">
-            <option value="1" disabled selected>--Selecet One--</option>
-            <option value="2">course 1</option>
-            <option value="3">course 2</option>
-            <option value="4">course 3</option>
-          </select>
-          <br />
-          <label for="sname">Student Name</label>
-          <br />
-          <input type="text" name="sname" id="sname" />
-          <br />
-          <label for="fname">Father Name</label>
-          <br />
-          <input type="text" name="fname" id="fname" />
-          <br />
-          <label for="mname">Mother Name</label>
-          <br />
-          <input type="text" name="mname" id="mname" />
-          <br />
-          <label for="dob">Date of Birth</label>
-          <input type="date" name="dob" id="dob" />
-          <br />
-          <p>Gender:</p>
-          <label for="male">Male</label>
-          <input type="radio" name="gender" id="male" />
-          <label for="female">Female</label>
-          <input type="radio" name="gender" id="female" />
-          <br />
-          <label for="email">Email</label>
-          <br />
-          <input type="email" name="email" id="email" />
-          <br />
-          <label for="phone">Phone(Must be 11 digits)</label>
-          <br />
-          <input type="number" name="phone" id="phone" />
-          <br />
+
+    <!-- main area starts -->
+
+    <main class="main-area">
+      <div class="main">
+        <div class="main-header">
+          <h1 class="m-header">Student Registration Form</h1>
+          <hr class="header-hr" />
         </div>
-        <div class="right-side">
-          <label for="id-type">Identification Type</label>
-          <br />
-          <select name="id-type" id="id-type">
-            <option value="1" disabled selected>--Selecet One--</option>
-            <option value="2">National Id Card</option>
-            <option value="3">Birth Registration</option>
-          </select>
-          <br />
-          <p>
-            Identification No. (Must be 10 digits for new NID or 17 digits for
-            old NID. If your National ID is 13 digits, then please add your
-            birth year with the ID as prefix. Example: 1980XXXXXXXXXXXXX)*
-          </p>
-          <input type="number" name="identification" id="identification" />
-          <br />
-          <label for="home-district">Home District</label>
-          <br />
-          <select name="home-district" id="home-district">
-            <option value="1" disabled selected>--Selecet One--</option>
-            <option value="2">district 1</option>
-            <option value="3">district 1</option>
-            <option value="4">district 1</option>
-          </select>
-          <br />
-          <label for="upazilla">Upazilla</label>
-          <br />
-          <select name="upazilla" id="upazilla">
-            <option value="1" disabled selected>--Selecet One--</option>
-            <option value="2">upazilla 1</option>
-            <option value="3">upazilla 1</option>
-            <option value="4">upazilla 1</option>
-          </select>
-          <br />
-          <p>Village/House No./Road No./Other</p>
-          <label for="alternative">Alternative</label>
-          <br />
-          <input type="text" name="alternative" id="alternative" />
-          <br />
-          <label for="post-office">Post Office</label>
-          <br />
-          <input type="text" name="post-office" id="post-office" />
-          <br />
-          <label for="ed">Educational Quallification (Higher Level)</label>
-          <br />
-          <select name="ed" id="ed">
-            <option value="1" disabled selected>--Selecet One--</option>
-            <option value="2">Higher Secondary/Equivalent</option>
-            <option value="3">Bacherlor</option>
-            <option value="4">Masters</option>
-            <option value="4">PHD</option>
-          </select>
-          <br />
-          <p>Have any computer?</p>
-          <label for="yes">Yes</label>
-          <input type="radio" name="computer" id="yes" />
-          <label for="no">No</label>
-          <input type="radio" name="computer" id="no" />
-          <br />
-          <label for="photo">Photograph</label>
-          <br />
-          <input type="file" name="photo" id="photo" />
-          <br />
-          <p>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</p>
-          <label for="sign">Signature</label>
-          <br />
-          <input type="file" name="sign" id="sign" />
-          <br />
-          <input type="submit" value="Submit" />
+        <div class="main-para">
+          <p class="para-text">Please enter relevent information</p>
+          <p class="mandatory-text">Mandatory Field*</p>
         </div>
-      </form>
+        <form action="" class="main-form">
+          <div class="left-side">
+            <label for="district"
+              >District(<span class="mandatory-text"
+                >Institute District: Where you want to do your course</span
+              >)*</label
+            >
+            <br />
+            <select name="district" id="district">
+              <option value="1" selected>--Select One--</option>
+              <option value="2">district 1</option>
+              <option value="3">district 1</option>
+              <option value="4">district 1</option>
+            </select>
+            <br />
+            <label for="course">Course*</label>
+            <br />
+            <select name="course" id="course">
+              <option value="1" selected>--Select One--</option>
+              <option value="2">course 1</option>
+              <option value="3">course 2</option>
+              <option value="4">course 3</option>
+            </select>
+            <br />
+            <label for="sname">Student Name*</label>
+            <br />
+            <input type="text" name="sname" id="sname" />
+            <br />
+            <label for="fname">Father Name*</label>
+            <br />
+            <input type="text" name="fname" id="fname" />
+            <br />
+            <label for="mname">Mother Name*</label>
+            <br />
+            <input type="text" name="mname" id="mname" />
+            <br />
+            <label for="dob">Date of Birth*</label>
+            <input type="date" name="dob" id="dob" />
+            <br />
+            <p class="inline-text">Gender*</p>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" />
+            <br />
+            <label for="email">Email*</label>
+            <br />
+            <input type="email" name="email" id="email" />
+            <br />
+            <p class="mandatory-text">(e.g: example@mail.com)</p>
+            <label for="phone"
+              >Phone(<span class="mandatory-text">Must be 11 digits</span
+              >)*</label
+            >
+            <br />
+            <input type="number" name="phone" id="phone" />
+            <br />
+          </div>
+          <div class="right-side">
+            <label for="id-type">Identification Type*</label>
+            <br />
+            <select name="id-type" id="id-type">
+              <option value="1" selected>--Select One--</option>
+              <option value="2">National Id Card</option>
+              <option value="3">Birth Registration</option>
+            </select>
+            <br />
+            <p class="mandatory-text">
+              Identification No. (Must be 10 digits for new NID or 17 digits for
+              old NID. If your National ID is 13 digits, then please add your
+              birth year with the ID as prefix. Example: 1980XXXXXXXXXXXXX)*
+            </p>
+            <input type="number" name="identification" id="identification" />
+            <br />
+            <label for="home-district">Home District*</label>
+            <br />
+            <select name="home-district" id="home-district">
+              <option value="1" selected>--Select One--</option>
+              <option value="2">district 1</option>
+              <option value="3">district 1</option>
+              <option value="4">district 1</option>
+            </select>
+            <br />
+            <label for="upazilla">Upazilla*</label>
+            <br />
+            <select name="upazilla" id="upazilla">
+              <option value="1" disabled Select>--Select One--</option>
+              <option value="2">upazilla 1</option>
+              <option value="3">upazilla 1</option>
+              <option value="4">upazilla 1</option>
+            </select>
+            <br />
+            <p class="mandatory-text">Village/House No./Road No./Other</p>
+            <label for="alternative">Alternative*</label>
+            <br />
+            <input type="text" name="alternative" id="alternative" />
+            <br />
+            <label for="post-office">Post Office*</label>
+            <br />
+            <input type="text" name="post-office" id="post-office" />
+            <br />
+            <label for="ed">Educational Quallification (Higher Level)*</label>
+            <br />
+            <select name="ed" id="ed">
+              <option value="1" selected>--Select One--</option>
+              <option value="2">Higher Secondary/Equivalent</option>
+              <option value="3">Bacherlor</option>
+              <option value="4">Masters</option>
+              <option value="4">PHD</option>
+            </select>
+            <br />
+            <p class="inline-text">Have any computer?*</p>
+            <label for="yes">Yes</label>
+            <input type="radio" name="computer" id="yes" />
+            <label for="no">No</label>
+            <input type="radio" name="computer" id="no" />
+            <br />
+            <label for="photo">Photograph*</label>
+            <br />
+            <input type="file" name="photo" id="photo" />
+            <br />
+            <p class="mandatory-text">
+              (File type must be jpg or jpeg or png. Maximum file size 2 mb.)
+            </p>
+            <label for="sign">Signature*</label>
+            <br />
+            <input type="file" name="sign" id="sign" />
+            <br />
+            <p class="mandatory-text">
+              (File type must be jpg or jpeg or png. Maximum file size 2 mb.)
+            </p>
+            <br />
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
