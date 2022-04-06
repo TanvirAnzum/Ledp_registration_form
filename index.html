@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learning and Earning Monitoring System: Welcome</title>
+    <title>Learning and Earning Monitoring System</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -112,11 +112,25 @@
               <legend>Date of Birth*</legend>
               <div class="day">
                 <label for="day">Day</label>
-                <input type="number" name="day" id="day" max="31" min="0" />
+                <input
+                  type="number"
+                  name="day"
+                  id="day"
+                  max="31"
+                  min="0"
+                  placeholder="Select Date"
+                />
               </div>
               <div class="month">
                 <label for="month">Month</label>
-                <input type="number" name="month" id="month" max="12" min="1" />
+                <input
+                  type="number"
+                  name="month"
+                  id="month"
+                  max="12"
+                  min="1"
+                  placeholder="Select Month"
+                />
               </div>
               <div class="year">
                 <label for="year">Year</label>
@@ -126,15 +140,21 @@
                   id="year"
                   max="2016"
                   min="1900"
+                  placeholder="Select Year"
                 />
               </div>
             </fieldset>
-            <br />
             <p class="inline-text">Gender*</p>
-            <label for="male">Male</label>
+            <label for="male"><strong>Male</strong></label>
             <input type="radio" name="gender" id="male" />
-            <label for="female">Female</label>
+            <label for="female"><strong>Female</strong></label>
             <input type="radio" name="gender" id="female" />
+            <br />
+            <p class="inline-text">Physically Handicapped*</p>
+            <label for="h-yes"><strong>Yes</strong></label>
+            <input type="radio" name="handi" id="h-yes" />
+            <label for="h-no"><strong>No</strong></label>
+            <input type="radio" name="handi" id="h-no" />
             <br />
             <label for="email">Email*</label>
             <br />
@@ -147,6 +167,7 @@
             >
             <br />
             <input type="tel" name="phone" id="phone" />
+            <p class="mandatory-text">(e.g:0155123456)</p>
             <br />
           </div>
           <div class="vl"></div>
@@ -204,9 +225,9 @@
             </select>
             <br />
             <p class="inline-text">Have any computer?*</p>
-            <label for="yes">Yes</label>
+            <label for="yes"><strong>Yes</strong></label>
             <input type="radio" name="computer" id="yes" />
-            <label for="no">No</label>
+            <label for="no"><strong>No</strong></label>
             <input type="radio" name="computer" id="no" />
             <br />
             <label for="photo">Photograph*</label>
